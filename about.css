@@ -1,0 +1,1102 @@
+:root{
+  --col1: rgb(56,56,56);
+   --col2:rgb(32,178,170);
+  --col3:   rgb(240,240,240);
+  --col4: rgb(255,255,102);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ 
+body{
+  min-height: 100vh;
+  background: var(--col3);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: rgb(128,128,128);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(169,169,169);
+}
+header{
+  width: 100%;
+}
+header nav{
+  width: 100%;
+  display: flex;
+  background: var(--col1);
+  color: white;
+  padding: 0.1rem 2rem;
+   
+}
+header nav .logo{
+display: flex;
+align-items: center;
+}
+header nav .logo h1{
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+header nav .logo h1 a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+header nav .logo h1 a img{
+  height: 3.5rem;
+  width: 15rem;
+}
+header nav ul{
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+header nav ul li{
+  list-style-type: none;
+  margin-right: 3.5rem;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+}
+header nav ul li a:hover{
+  font-size: 1.8rem;
+}
+main{
+  width: 100%;
+
+}
+main .navs{
+  width: 100%;
+  display: flex;
+      background: var(--col2); 
+   position: sticky;
+   top: 0px;
+   z-index: 999999;
+   box-shadow: 1px 1px 4px rgba(0,0,0,0.45);
+}
+main .navs .tog{
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 20rem;
+  background:var(--col3);
+  top: 2.9rem;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.65);
+  border-bottom-right-radius: 4px;
+   background: var(--col1);
+  border-bottom-left-radius: 4px;
+
+}
+main .navs .tog ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+main .navs .tog ul li{
+display: flex;
+  justify-content: center;
+width: 100%;
+ margin-left: 4rem;
+ margin-top: 2rem;
+
+}
+main .navs .tog ul li a{
+  color: black;
+  font-size: 1.5rem;
+  font-family: 'Baloo 2', cursive;
+  padding: 0.5rem 0rem;
+  width: 80%;
+  text-align: center;
+ border-radius: 8px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  background: var(--col2);
+  color: white;
+}
+main .navs .tog ul li a:hover{
+  border: solid 2px var(--col2);
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  background: transparent;
+  color: white;
+}
+main .navs .bars .but{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.8rem;
+  top: 0.5rem;
+  left: 1.5rem;
+  position: absolute;
+  display: none;
+}
+main .navs ul{
+display: flex;
+  align-items: center;  
+  width: 65%;
+    padding: 0.3rem 0rem;
+    justify-content: center;
+}
+main .navs ul li{
+  list-style-type: none;
+  margin-right: 4rem;
+}
+main .navs ul li a{
+  text-decoration: none;
+  font-size: 1rem;
+  color: white;
+  font-family: 'Baloo 2', cursive;
+    padding: 0.1rem 1rem;
+}
+main .navs ul li a:hover{
+border: solid 2px white;
+  border-radius: 8px;
+}
+main .navs .log-sec{
+  display: flex;
+  align-items: center; 
+  background: white; 
+    padding: 0.3rem 2.5rem;
+  width: 35%;
+  position: relative;
+}
+main .navs .log-sec::before{
+  content: "";
+  position: absolute;
+  background: white;
+  height: 100%;
+  width: 3rem;
+  left: -2rem;
+  transform: skewX(-22deg);
+}
+main .navs .log-sec h3{
+  font-family: 'Baloo 2', cursive;
+}
+main .navs .log-sec button{
+  margin-left: 1.2rem;
+  padding: 0.2rem 2rem;
+   border: none;
+   outline: none;
+   border-radius: 6px;
+background: white;
+  border: solid 2px var(--col2);
+}
+main .navs .log-sec button a{
+  text-decoration: none;
+  font-size: 1rem;
+font-family: 'Baloo 2', cursive;
+   color: black;
+}
+main .navs .log-sec button:hover a{
+  color: white;
+}
+
+main .navs .log-sec button:hover{
+  border: none;
+  outline: none;
+   background: var(--col2); 
+}
+
+
+
+.about-area{
+  width: 100%;
+  display: flex;
+  height: 90vh;
+}
+.about-area .part-a{
+  width: 50%;
+  padding: 7rem 0rem 5rem 5rem;
+}
+.about-area .part-a .a-head{
+    background: linear-gradient(135deg,rgba(32,178,170,0.8),rgba(127,255,212,0.9));  
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: left;
+  padding-left: 7rem;
+ font-family: 'Baloo 2', cursive;
+  font-weight: 600;
+  
+}           
+.about-area .part-a .p-head{
+  margin-top: 1.5rem;
+  padding: 0rem 7rem;
+  text-align: justify;
+  padding-right: 13.5rem;
+  font-size: 1.1rem;
+  color: rgba(0,0,0,0.8);
+  opacity: 0.8;
+  font-family: 'Kaisei HarunoUmi', serif;
+}
+.about-area .part-b{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-area .part-b img{
+  width: 76%;
+  height: 82%;
+border-radius: 15px;
+box-shadow: 2px 2px 7px rgba(0,0,0,0.7);
+
+}
+
+
+
+main .card-section{
+  width: 100%;
+  padding: 0.2rem 2rem 2rem 2rem;
+}
+main .card-section .head-title{
+  font-family: 'Poppins', sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+main .card-section .head-title span{
+   background: linear-gradient(135deg,rgba(32,178,170,0.8),rgba(127,255,212,0.9)); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+main .card-section .flex{
+   width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+main .card-section .flex .grid-a{
+display: flex;  
+  width:50%;
+}
+main .card-section .flex .grid-b{
+display: flex; 
+   width:50%;
+}
+main .card-section .flex .card{
+  padding: 2rem;
+  border-radius: 6px;
+  width: 20rem;
+  background: rgb(255,255,255);
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.65);
+
+}
+
+main .card-section .flex .card:hover{
+ background: rgb(245,255,250);
+}
+
+main .card-section .flex .card i{
+  font-size: 4rem;
+   background: linear-gradient(135deg,rgba(32,178,170,0.8),rgba(127,255,212,0.9)); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+main .card-section .flex .card h2{
+   font-size: 1.65rem;
+font-family: 'Baloo 2', cursive; 
+margin-top: 1rem;
+   background: linear-gradient(135deg,rgba(32,178,170,0.8),rgba(127,255,212,0.9)); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+main .card-section .flex .card p{
+   font-size: 1rem;
+font-family: 'Baloo 2', cursive; 
+margin-top: 0.8rem;
+opacity: 7;
+word-break: break-all;
+}
+main .card-section .flex .card p span{
+  font-size: 1.5rem;
+ background: linear-gradient(135deg,rgba(32,178,170,0.8),rgba(127,255,212,0.9)); 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   margin-right: 0.25rem;
+}
+
+
+
+
+
+.dev-section{
+  width: 100%;
+  margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.dev-section h1{
+  font-size: 4rem;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+}
+.dev-section .dev-cards{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem 4rem;
+
+}
+
+.dev-section .dev-cards .dp{
+  width: 21rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   background: linear-gradient(135deg,rgba(32,178,170,0.8),rgba(127,255,212,0.9)); 
+   color: white;
+   box-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+   border-radius: 8px;
+ margin: 2rem;
+ position: relative;
+}
+.dev-section .dev-cards .dp:hover{
+   background: linear-gradient(135deg,rgba(127,255,212,0.9),rgba(32,178,170,0.8)); 
+}
+.dev-section .dev-cards .dp img{
+  height: 8rem;
+  width: 8rem;
+  border: solid 3px white;
+  border-radius: 50%;
+  z-index: 9999;
+}
+.dev-section .dev-cards .dp::before{
+  content: '';
+  position: absolute;
+  width: 85%;
+  top: 5.6rem;
+  height: 0.1rem;
+  border-radius: 8px;
+  background: white;
+}
+.dev-section .dev-cards .dp h3{
+     font-size: 1.95rem;
+font-family: 'Baloo 2', cursive; 
+margin-top: 1rem;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.dev-section .dev-cards .dp h4{
+     font-size: 1rem;
+font-family: 'Baloo 2', cursive; 
+font-weight: 600;
+position: relative;
+top: -0.3rem;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+
+.dev-section .dev-cards .dp h6{
+     font-size: 1.45rem;
+       font-family: 'Baloo 2', cursive; 
+font-weight: 600;
+position: relative;
+top: -0.3rem;
+text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+.dev-section .dev-cards .dp a{
+  padding: 0.3rem 3.35rem;
+  border: solid 2px white;
+  color: white;
+  text-decoration: none;
+    font-size: 1.15rem;
+          font-family: 'Baloo 2', cursive; 
+    margin-top: 1rem;
+    border-radius: 10rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+     box-shadow: 1px 1px 9px rgba(0,0,0,0.4);
+
+}
+.dev-section .dev-cards .dp a:hover{
+  background: white;
+   color:rgb(123,104,238);
+   text-shadow: 0px 0px 0px rgba(0,0,0,0);
+     font-weight: 700;
+}
+
+
+
+
+
+
+
+footer{
+  width: 100%;
+}
+footer .foot-section{
+  background: var(--col1);
+  color: white;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+footer .foot-section ul{
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+footer .foot-section ul li{
+  list-style-type: none;
+  margin-right: 3.5rem;
+}
+footer .foot-section ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+footer .foot-section ul li a:hover{
+ color: var(--col4);
+}
+footer .foot-section .c-r{
+  margin-top: 1rem;
+}
+footer .foot-section .c-r h5{
+font-family: 'Poppins', sans-serif;
+font-weight: 100;
+font-size: 1.25rem;
+}
+footer .foot-section .c-r h5 span{
+  color: rgb(0,191,255);
+}
+footer .foot-section .c-r h6{
+  margin-top: 1rem;
+  font-weight: 100;
+  font-family: 'Baloo 2', cursive;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+
+
+
+
+footer{
+  width: 100%;
+}
+footer .foot-section{
+  background: var(--col1);
+  color: white;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+footer .foot-section ul{
+  display: flex;
+  justify-content: center;
+  display: none;
+}
+footer .foot-section ul li{
+  list-style-type: none;
+  margin-right: 3.5rem;
+}
+footer .foot-section ul li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.8rem;
+}
+footer .foot-section ul li a:hover{
+ color: var(--col4);
+}
+footer .foot-section .c-r{
+  margin-top: 1rem;
+}
+footer .foot-section .c-r h5{
+font-family: 'Poppins', sans-serif;
+font-weight: 100;
+font-size: 1.25rem;
+}
+footer .foot-section .c-r h5 span{
+  color: var(--col2);
+}
+footer .foot-section .c-r h6{
+  margin-top: 1rem;
+  font-weight: 100;
+  font-family: 'Baloo 2', cursive;
+  font-size: 1rem;
+  text-align: center;
+}
+
+
+
+
+
+
+/*media queries section*/
+
+
+
+
+
+@media screen and (max-width: 1420px){
+
+  .about-area .part-a{
+  width: 50%;
+  padding: 6rem 0rem 2rem 2rem;
+}
+.about-area .part-a .a-head{
+
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: left;
+  padding-left: 5rem;
+  
+}           
+.about-area .part-a .p-head{
+  margin-top: 3rem;
+  padding: 0rem 5rem;
+  text-align: justify;
+  padding-right: 8.5rem;
+  font-size: 1rem;
+  color: rgba(0,0,0,0.7);
+  opacity: 0.7;
+  font-family: 'Kaisei HarunoUmi', serif;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 1300px){
+
+  .about-area .part-a{
+  width: 50%;
+  padding: 6rem 0rem 2rem 2rem;
+}
+.about-area .part-a .a-head{
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: left;
+  padding-left: 2.5rem;
+  
+}           
+.about-area .part-a .p-head{
+  margin-top: 3rem;
+  padding: 0rem 2.5rem;
+  text-align: justify;
+  padding-right: 8.5rem;
+  font-size: 0.965rem;
+  color: rgba(0,0,0,0.7);
+  opacity: 0.7;
+  font-family: 'Kaisei HarunoUmi', serif;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1230px){
+ main .navs ul{
+  width: 50%;
+}
+main .navs .log-sec{
+  width: 50%;
+}
+}
+  
+
+
+
+@media screen and (max-width: 1200px){
+
+  .about-area .part-a{
+  width: 50%;
+  padding: 6rem 0rem 2rem 2rem;
+}
+.about-area .part-a .a-head{
+  
+  font-size: 3.75rem;
+  font-weight: 900;
+  text-align: left;
+  padding-left: 2.75rem;
+  
+}           
+.about-area .part-a .p-head{
+  margin-top: 3rem;
+  padding: 0rem 1rem;
+  text-align: justify;
+  padding-right: 4rem;
+  font-size: 1rem;
+  color: rgba(0,0,0,0.7);
+  opacity: 0.7;
+  font-family: 'Kaisei HarunoUmi', serif;
+}
+
+}
+@media screen and (max-width: 1100px){
+ main .card-section .flex{
+   flex-direction: column;
+} 
+main .card-section .flex .grid-a{
+  width:100%;
+  justify-content: center;
+}
+main .card-section .flex .grid-b{
+   width:100%;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+main .card-section .flex .card{
+  width: 25rem;
+}
+}
+
+
+@media screen and (max-width: 1020px){
+  .about-area{
+  width: 100%;
+  display: flex;
+  height: auto;
+}
+
+  .about-area{
+    flex-direction: column-reverse;
+  }
+  .about-area .part-a{
+  width: 100%;
+  padding: 0rem 0rem 5rem 0rem;
+}
+.about-area .part-a .a-head{
+  font-size: 4.5rem;
+  font-weight: 900;
+  text-align: center;
+padding-left: 0.1rem;
+}
+.about-area .part-a .p-head{
+  margin-top: 2.5rem;
+  padding: 0rem 8rem;
+  text-align: justify;
+  
+  font-size: 1.6rem;
+  color: rgba(0,0,0,0.7);
+  opacity: 0.7;
+  font-family: 'Kaisei HarunoUmi', serif;
+}
+.about-area .part-b{
+  width: 100%;
+}
+.about-area .part-b img{
+  width: 100%;
+  height: 600px;
+}
+
+}
+
+
+
+
+@media screen and (max-width: 900px){
+main .navs .bars .but{
+  display: block;
+}
+main .navs .bars{
+  width: 30%;
+}
+ main .navs ul{
+  display: none;
+}
+main .navs .log-sec{
+  width: 70%;
+}
+header nav ul{
+  display: none;
+}
+footer .foot-section ul{
+  display: block;
+  display: flex;
+}
+main .navs .tog{
+  
+  height: 20rem;
+  width: 100%;
+  background: var(--col1);
+  border-bottom-left-radius: 4px;
+
+}
+.about-area .part-b img{
+  width: 100%;
+  height:450px;
+}
+
+
+  }
+
+  @media screen and (max-width: 700px){
+  
+.about-area .part-b img{
+  width: 100%;
+  height: 400px;
+}
+.about-area .part-a .a-head{
+
+padding-left: 0.1rem;
+}
+
+.about-area .part-a .a-head{
+  font-size: 3.5rem;
+}
+.about-area .part-a .p-head{
+  font-size: 1.3rem;
+}
+
+
+main .container-a .wraps .row-a{
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+main .container-a .wraps .row-a .dp-b{
+  margin-left: 0rem;
+    margin-top: 3rem;
+}
+main .container-a .wraps .row-b{
+  width: 100%;
+  margin-top: 3rem;
+  flex-direction: column;
+  align-items: center;
+}
+main .container-a .wraps .row-b .dp-d{
+  margin-left: 0rem;
+    margin-top: 3rem;
+}
+main .container-a .wraps .dp{
+  width: 70%;
+}
+
+}
+
+
+
+@media screen and (max-width: 680px){
+main .navs .bars .but{
+  display: block;
+}
+main .navs .bars{
+  width: 15%;
+}
+ main .navs ul{
+  display: none;
+}
+main .navs .log-sec{
+  width: 85%;
+}
+main .navs .log-sec{
+  display: flex;
+ justify-content: center;
+}
+
+  }
+
+
+
+
+@media screen and (max-width: 640px){
+main .navs .bars .but{
+  display: block;
+}
+main .navs .bars{
+  width: 9rem;
+}
+ main .navs ul{
+  display: none;
+}
+main .navs .log-sec{
+  width: 100%;
+}
+main .navs .log-sec{
+  display: flex;
+ justify-content: center;
+}
+main .card-section .flex .grid-a{
+  width:100%;
+  flex-direction: column;
+  align-items: center;
+}
+main .card-section .flex .grid-b{
+   width:100%;
+   flex-direction: column;
+   align-items: center;
+    margin-top: 0.1rem;
+}
+main .card-section .flex .card{
+  width: 80%;
+   margin-top: 1.35rem;
+}
+
+  }
+
+
+
+  @media screen and (max-width: 620px){
+main .navs .log-sec button{
+  margin-left: 1rem;
+  padding: 0.2rem 1.5rem;
+  border: solid 2px var(--col2);
+}
+main .navs .log-sec button a{
+  font-size: 0.85rem;
+}
+main .navs .bars .but{
+  font-size: 1.65rem;
+}
+
+  }
+
+
+@media screen and (max-width: 600px){
+
+header nav{
+justify-content: center;
+}
+
+main .navs .tog{
+  
+  height: 17.25rem;
+  top: 2.15rem;
+  width: 100%;
+  background: var(--col1);
+  border-bottom-left-radius: 4px;
+
+}
+
+main .navs .tog ul li a{
+  font-size: 1rem;
+  padding: 0.4rem 0rem;
+  width: 80%;
+    box-shadow: 1px 1px 2px var(--col3);
+  
+}
+main .card-section .flex .grid-a{
+  width:100%;
+  flex-direction: column;
+  align-items: center;
+}
+main .card-section .flex .grid-b{
+   width:100%;
+   flex-direction: column;
+   align-items: center;
+    margin-top: 0.1rem;
+}
+main .card-section .flex .card{
+  width: 28rem;
+   margin-top: 1.35rem;
+}
+.dev-section h1{
+  font-size: 3rem;
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+}
+}
+
+
+@media screen and (max-width: 500px){
+
+main .card-section .flex .card{
+  width: 20rem;
+   margin-top: 1.35rem;
+}
+
+main .main-carousel{
+ height: 15rem; 
+}
+main .card-section .head-title{
+  
+  font-size: 1.8rem;
+  
+}
+main .main-carousel .carousel-cell .compress h1{
+  font-size: 1.3rem;
+}
+
+main .main-carousel .carousel-cell .compress p{
+  font-size: 0.7rem;
+}
+main .navs .log-sec h3{
+ font-size: 0.7rem;
+ width: 6rem;
+
+}
+main .navs .log-sec button{
+  margin-left: 0.8rem;
+  padding: 0.1rem 0.5rem;
+   border: none;
+   outline: none;
+   border-radius: 4px;
+  border: solid 1.75px var(--col2);
+  width: 5rem;
+}
+main .navs .log-sec button a{
+
+  font-size: 0.65rem;
+
+}
+main .navs .log-sec{
+ 
+  width: 75%;
+}
+main .navs .bars .but{
+  
+  font-size: 1.25rem;
+
+
+}
+main .navs .bars{
+  min-width: 5rem;
+}
+
+header nav{
+  justify-content: center;
+}
+header nav .logo{
+  margin-left: 0;
+}
+header nav .logo h1{
+  font-size: 1.5rem;
+  position: relative;
+  right: 1.2rem;
+}
+header nav .logo h1 i{
+  font-size: 1.5rem;
+  right: -2rem;
+}
+
+
+footer .foot-section ul{
+  justify-content: center;
+}
+footer .foot-section ul li{
+  
+  margin-right: 2.5rem;
+}
+footer .foot-section ul li:first-child{
+  margin-left: 1.25rem;
+}
+footer .foot-section ul li a{
+  
+  font-size: 1.5rem;
+}
+
+footer .foot-section .c-r h5{
+font-size: 0.8rem;
+}
+footer .foot-section .c-r h6{
+ margin-top: 0.8rem;
+  font-size: 0.82rem;
+  
+}
+
+.about-area .part-b img{
+  width: 100%;
+  height: 250px;
+}
+.about-area .part-a .p-head{
+  margin-top: 2.5rem;
+  padding: 0rem 2rem;
+  font-size: 1.3rem;
+  
+}
+.about-area .part-a .a-head{
+padding-left: 0.1rem;
+}
+.about-area .part-a .a-head{
+  font-size: 2.5rem;
+}
+.about-area .part-a .p-head{
+  font-size: 1rem;
+}
+
+main .card-section .flex .card{
+  width: 95%;
+   margin-top: 1.35rem;
+}
+main .card-section .head-title{
+  
+  font-size: 1.8rem;
+  
+}
+main .card-section .flex .grid-a{
+  width:100%;
+  align-items: center;
+  padding: 0;
+}
+main .card-section .flex .grid-b{
+   width:100%;
+    align-items: center;
+    padding: 0;
+}
+main .card-section .flex .card{
+  width: 85%rem;
+  margin-left: 0;
+}
+main .card-section .head-title{
+  font-size: 2rem;
+}
+main .card-section .flex{
+  margin-top: 0.5rem;
+}
+.dev-section h1{
+  font-size: 2rem;
+   
+}
+.dev-section .dev-cards{
+  padding: 1rem 1rem;
+
+}
+.dev-section .dev-cards .dp{
+  width: 90%;
+  margin: 1rem;
+  
+}
+main .navs .tog{
+ 
+  height: 12rem;
+  
+
+}
+}
